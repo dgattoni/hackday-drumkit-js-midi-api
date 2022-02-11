@@ -1,0 +1,27 @@
+body {
+  background-color: aliceblue;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#drum_part {
+  font-size: 5rem;
+  color: black;
+  text-shadow: 4px 5px 0 white;
+  animation: fade-in-move-down 0.7s;
+}
+
+@keyframes fade-in-move-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
